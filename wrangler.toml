@@ -1,0 +1,16 @@
+name = "emby-proxy-cf1"
+main = "src/worker.ts"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "dist"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "emby_proxy"
+database_id = "b60e34cc-ba92-4d96-a975-e1a6dbf006e5"
+migrations_dir = "migrations"
+
+[vars]
+CF_DNS_PROXIED = "true"

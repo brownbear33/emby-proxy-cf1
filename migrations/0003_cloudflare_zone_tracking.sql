@@ -1,0 +1,1 @@
+ALTER TABLE lines ADD COLUMN cf_zone_id TEXT NOT NULL DEFAULT '';

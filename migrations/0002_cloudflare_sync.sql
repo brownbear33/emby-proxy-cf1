@@ -1,0 +1,4 @@
+ALTER TABLE lines ADD COLUMN cf_dns_record_id TEXT NOT NULL DEFAULT '';
+ALTER TABLE lines ADD COLUMN cf_sync_status TEXT NOT NULL DEFAULT 'pending';
+ALTER TABLE lines ADD COLUMN cf_sync_message TEXT NOT NULL DEFAULT '';
+ALTER TABLE lines ADD COLUMN cf_last_synced_at TEXT NOT NULL DEFAULT '';
